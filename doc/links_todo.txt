@@ -12,3 +12,6 @@ https://en.wikipedia.org/wiki/Hardware_acceleration
 
 http://www.ghacks.net/2013/03/05/how-to-enable-gpu-accelerated-decoding-in-vlc/ !!
 https://wiki.videolan.org/VLC_GPU_Decoding/ !!
+
+http://www.elektronik-kompendium.de/sites/com/1405281.htm !!
+https://developer.nvidia.com/opencl
