@@ -1,3 +1,0 @@
-[submodule "opencl-example"]
-	path = opencl-example
-	url = git@github.com:ReneHollander/opencl-example.git
