@@ -1,0 +1,14 @@
+http://boinc.berkeley.edu/wiki/GPU_computing
+http://www.enparallel.com/GPUDSC_wp.pdf
+
+http://www.nvidia.com/object/what-is-gpu-computing.html !!
+
+http://docs.citrix.com/de-de/xenapp-and-xendesktop/7-6/xad-hdx-landing/xad-hdx3dpro-gpu-accel-desktop.html
+https://de.wikipedia.org/wiki/General_Purpose_Computation_on_Graphics_Processing_Unit
+http://gpgpu.org/
+http://www.nvidia.com/content/tesla/pdf/aa-v7-i3-accelerating-mechanical-solutions-with-gpus.pdf
+http://www.nvidia.com/content/cuda/spotlights/gpu-accelerated-science-and-computing.html
+https://en.wikipedia.org/wiki/Hardware_acceleration
+
+http://www.ghacks.net/2013/03/05/how-to-enable-gpu-accelerated-decoding-in-vlc/ !!
+https://wiki.videolan.org/VLC_GPU_Decoding/ !!
