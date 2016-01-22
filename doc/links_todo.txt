@@ -1,17 +1,19 @@
-http://boinc.berkeley.edu/wiki/GPU_computing
-http://www.enparallel.com/GPUDSC_wp.pdf
+http://www.elektronik-kompendium.de/sites/com/1405281.htm
 
-http://www.nvidia.com/object/what-is-gpu-computing.html !!
+http://www.nvidia.de/object/gpu-computing-de.html
 
-http://docs.citrix.com/de-de/xenapp-and-xendesktop/7-6/xad-hdx-landing/xad-hdx3dpro-gpu-accel-desktop.html
-https://de.wikipedia.org/wiki/General_Purpose_Computation_on_Graphics_Processing_Unit
-http://gpgpu.org/
-http://www.nvidia.com/content/tesla/pdf/aa-v7-i3-accelerating-mechanical-solutions-with-gpus.pdf
-http://www.nvidia.com/content/cuda/spotlights/gpu-accelerated-science-and-computing.html
-https://en.wikipedia.org/wiki/Hardware_acceleration
+http://www.nvidia.de/object/cuda-parallel-computing-de.html
 
-http://www.ghacks.net/2013/03/05/how-to-enable-gpu-accelerated-decoding-in-vlc/ !!
-https://wiki.videolan.org/VLC_GPU_Decoding/ !!
+Ausarbeitung Hollander, Kalauner!!
 
-http://www.elektronik-kompendium.de/sites/com/1405281.htm !!
-https://developer.nvidia.com/opencl
+https://www.matse.itc.rwth-aachen.de/dienste/public/show_document.php?id=7165
+
+http://www.freenet.de/digitalewelt/gpugrundlagen-das-koennen-grafikkarten_2508708_4736010.html
+
+https://www.fbi.h-da.de/fileadmin/personal/g.froehlich/CUDA_gpu_programming.pdf
+
+http://www.tomshardware.de/CUDA-Nvidia-CPU-GPU,testberichte-240065-2.html
+
+http://www.heise.de/ct/artikel/Supercomputer-zu-Hause-291944.html
+
+http://www.weblearn.hs-bremen.de/risse/RST/WS06/GPGPU/GPGPU_ppt.pdf
