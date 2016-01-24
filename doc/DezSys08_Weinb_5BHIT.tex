@@ -11,7 +11,7 @@
 \gdef\mycourse{5BHIT 2015/16}
 \gdef\myauthor{Michael Weinberger}
 
-\gdef\myversion{0.1}
+\gdef\myversion{1.0}
 \gdef\mybegin{15. Januar 2016}
 \gdef\myfinish{23. Januar 2016}
 
@@ -111,28 +111,63 @@ OpenCL (Open Computing Language) ist ein offenes, lizenzfreies und plattformübe
 \section{Bestehende Programme (C/C++ und Java) auf GPUs nutzen und Grundvoraussetzungen}
 Dies ist nur durch bestimmte Toolkits, wie etwa GPSME \cite{gpsme} möglich, das einem bestimmte Vorgänge abnimmt. Ansonsten ist dieser Schritt nicht ohne erheblichen Mehraufwand möglich, die Logik müsste bspw. in OpenCL C erneut geschrieben werden, was auch ein komplettes Redesign der Algorithmen zur parallelen Lauffähigkeit auf mehreren Kernen bzw. Threads mit sich zieht.
 
+\newpage
+
 \section{Transcompiler und deren Einsatz}
 Nach einer Recherche ist mir kein solcher aufgefallen, der direkt source-to-source operiert. Wie im vorherigen Punkt beschrieben würde dies wahrscheinlich auch nur eingeschränkt Sinn machen, wenn z.B. Code in C ohne die benötigte Auslegung auf Parallelität zu OpenCL C-Code generiert wird. Außerdem sind in OpenCL C, welche im Grunde auf der Syntax von ISO C99 basiert, zusätzliche Datentypen und Funktionen enthalten zur parallelen Verarbeitung, die einem in C abgehen. Umso weiter entfernt scheint nun die Vorstellung eines Transcompilers, der hier alle Umstände berücksichtigt, und aus einer eingeschränkten Umgebung Code sinngemäß erweitern und verändern kann. \\
 Zur generellen Erklärung: \\
 Ein Transcompiler ist ein spezieller Compiler, der den Sourcecode eines Programmes in eine andere Programmiersprache überrträgt. \cite{transpiler}
 
 \section{Praktisches Beispiel: Benchmark}
-asdf
 \subsection{Auswahl und Argumentation der Algorithmen}
-asdf
+\subsubsection{Pi berechnen auf beliebig viele Stellen mit GPUPI}
+Die hier verwendete Bailey-Borwein-Plouffe-Formel ist eine Summenformel zur Berechnung der n-ten Nachkommazahl der Kreiszahl Pi. Der Gesamtaufwand beläuft sich auf die komplexe mathematische Berechnung.
+\subsubsection{CompuBenchCL}
+Die folgenden Tests werden im Benchmark berücksichtigt:
+\begin{itemize}
+	\item Gesichtserkennung \\
+	Basiert auf dem Viola-Jones-Algorithmus, analysiert Bilder auf Gesichter, um biometrische Daten zu sammeln.
+	\item  TV-L1 Optical Flow \\
+	Dieses Berechnungsmodell wird etwa in der Vidokompression verwendet.
+	\item Ocean Surface Simulation \\
+	Testet den FFT-Algorithmus anhand von Meereswellen.
+	\item Particle Simulation - 64k \\
+	Simuliert viele einzelne Partikel in einem Würfel und deren Bewegungen.
+	\item T-Rex \\
+	Ein Kurzfilm als Echtzeitberechnung.
+	\item Video Composition \\
+	Stellt verschiedene Videofilter gleichzeitig dar.
+	\item Bitcoin Mining \\
+	Berechnen des Bitcoin-Algorithmus, die Hersteller werden sich freuen!
+\end{itemize}
+
+\newpage
+
 \subsection{Gegenüberstellung CPU/GPU}
 sadf
 \subsection{Anzahl der Durchläufe}
 sadf
 \subsection{Informationen bei Benchmark}
-asdf
+Systemspezifikationen:
+\begin{itemize}
+	\item Acer Aspire V3-772
+	\item Windows 8.1 64-bit
+	\item Ausgabe 1920x1080p
+	\item Intel Core i7-4702MQ @ 2.20Ghz, 4 Kerne, 8 logische Prozessoren
+	\item NVIDIA GeForce GTX 760M \& Intel HD Graphics 4600 mit aktuellen Treibern (23.01.2016)
+	\item CL API Intel OpenCL \& NVIDIA CUDA
+	\item 16 GB RAM, 2 x 8 GB DDR3 1600 Mhz
+	\item Toshiba-HDD, 1 TB
+	\item Intel-SSD, 120 GB
+	\item 100\%, Netzbetrieb
+\end{itemize}
 \subsection{Beschreibung, Bereitstellung des Beispiels}
 sadf
 
 \newpage
 
 \bibliographystyle{unsrt}
-\bibliography{references}
+\bibliography{DezSys08_Weinb_5BHIT}
 \lstlistoflistings
 \listoffigures
 
