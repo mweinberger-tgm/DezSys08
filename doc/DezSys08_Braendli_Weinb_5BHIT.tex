@@ -9,11 +9,11 @@
 
 \gdef\mysubject{Systemtechnik-DezSys}
 \gdef\mycourse{5BHIT 2015/16}
-\gdef\myauthor{Erik Br\"andli/Michael Weinberger}
+\gdef\myauthor{Michael Weinberger}
 
 \gdef\myversion{0.1}
 \gdef\mybegin{15. Januar 2016}
-\gdef\myfinish{???}
+\gdef\myfinish{23. Januar 2016}
 
 \gdef\mygrade{Note:}
 \gdef\myteacher{Betreuer: Borko/Micheler}
@@ -85,9 +85,21 @@ OpenCL-Examples von René Hollander \& Paul Kalauner \cite{opencl_example}
 
 \clearpage
 
-\section{Möglichkeiten GPU Desktop-Anwendungen, Vorteil GPU bei rechenintensiven Implementierungen}
-asddf
-\newpage
+\section{Möglichkeiten GPU Desktopanwendungen, Vorteil GPU bei rechenintensiven Implementierungen}
+GPGPU (General Purpose Computation on Graphics Processing Unit) ist eine Programmier-Schnittstelle mit der Möglichkeit, allgemeine Berechnungen von der GPU ausführen zu lassen. Die ursprüngliche Aufgabe von Grafikchips ist, den Bildschirm mit Pixel zu füllen. Inzwischen eignen sich die umfangreichen Befehlssätze der GPUs auch für allgemeine Berechnungen, dies ist ein vergleichsweise neuer Trend in der Computertechnik, der darauf abzielt freie Rechenleistung konsequent auszunutzen. \\
+Eine CPU besitzt wenige, im Serverbereich bis zu 16, Kerne die für jedmögliche Art von Berechnungen ausgelegt sind. Eine GPU besitzt mehrere Hundert, heute sogar schon bis zu über 1536 Kerne die parallel arbeiten. Ein Vorteil, bestimmte komplexe Berechnungen hierauf auszulagern erscheint klar sichtbar. 
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/floating-point-operations-per-second}
+		\caption{GPU vs CPU, reine Rechenleistung \cite{comparison}}
+		\label{Angabe}
+	\end{center}
+\end{figure}
+Bei der reinen Rechenleistung ist wie auf dem Diagramm ersichtlich die GPU weit vorne. Die Rechenleistung ist in FLOPS (Floating Point Operations), die theoretisch mögliche Spitzenleistung, angegeben.
+
+GPGPU wird verwendet um Rechenaufwendige Applikationen zu beschleunigen. Besonders aufwendig sind vor allem die folgenden Anwendungsbereiche Simulationswissenschaften, Medizin, Deep Learning. \\
+
+Grafikkarten sind auf massive Parallelität ausgelegt, dies stellt aber auch Entwickler vor neue Herausforderungen. Es können je nach Anzahl an programmierbaren Shadereinheiten über 1000 Berechnungen zugleich in einem Takt ausgeführt werden. \cite{elko} \cite{Ausarbeitung}
 
 \section{Entwicklungsumgebungen, Programmiersprachen}
 asda
