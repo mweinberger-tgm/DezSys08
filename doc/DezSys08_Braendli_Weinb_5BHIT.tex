@@ -102,16 +102,19 @@ GPGPU wird verwendet um Rechenaufwendige Applikationen zu beschleunigen. Besonde
 Grafikkarten sind auf massive Parallelität ausgelegt, dies stellt aber auch Entwickler vor neue Herausforderungen. Es können je nach Anzahl an programmierbaren Shadereinheiten über 1000 Berechnungen zugleich in einem Takt ausgeführt werden. \cite{elko} \cite{Ausarbeitung}
 
 \section{Entwicklungsumgebungen, Programmiersprachen}
-asda
-\newpage
+\subsection{CUDA SDK}
+Die CUDA Entwicklertools umfassen drei wichtige Komponenten: Den aktuellsten CUDA-Treiber, ein komplettes CUDA-Toolkit sowie CUDA SDK-Codebeispiele. In der Entwicklung bindet man ein Programm an den GPU-Hersteller Nvidia und somit an das Vorhandensein von Nvidia-Hardware. Es stellt eine umfassende Entwicklungsumgebung bereit, um hauptsächlich in C/C++ geschriebene Programme mithilfe der GPU zu beschleunigen. Es existieren aber auch Wrapper für die Sprachen Perl, Java, Python, Ruby, Fortran und .NET. \cite{cuda}
+
+\subsection{OpenCL}
+OpenCL (Open Computing Language) ist ein offenes, lizenzfreies und plattformübergreifendes Framework, um Systeme aus einer Kombination von CPUs, GPUs und anderen Prozessoren zu programmieren. OpenCL wurde ursprünglich von Apple entwickelt, und war der erste Standard, welcher nahezu perfekt für heterogene Systeme ausgelegt war. Eine namhafte Implementierung mithilfe von OpenCL ist etwa der APP SDK von AMD. Die Host-API ist in OpenCL C/C++ definiert, es gibt außerdem Third-Party-APIs für Python, Java und .NET. \cite{Ausarbeitung}
 
 \section{Bestehende Programme (C/C++ und Java) auf GPUs nutzen und Grundvoraussetzungen}
-adf
-\newpage
+Dies ist nur durch bestimmte Toolkits, wie etwa GPSME \cite{gpsme} möglich, das einem bestimmte Vorgänge abnimmt. Ansonsten ist dieser Schritt nicht ohne erheblichen Mehraufwand möglich, die Logik müsste bspw. in OpenCL C erneut geschrieben werden, was auch ein komplettes Redesign der Algorithmen zur parallelen Lauffähigkeit auf mehreren Kernen bzw. Threads mit sich zieht.
 
 \section{Transcompiler und deren Einsatz}
-asdf
-\newpage
+Nach einer Recherche ist mir kein solcher aufgefallen, der direkt source-to-source operiert. Wie im vorherigen Punkt beschrieben würde dies wahrscheinlich auch nur eingeschränkt Sinn machen, wenn z.B. Code in C ohne die benötigte Auslegung auf Parallelität zu OpenCL C-Code generiert wird. Außerdem sind in OpenCL C, welche im Grunde auf der Syntax von ISO C99 basiert, zusätzliche Datentypen und Funktionen enthalten zur parallelen Verarbeitung, die einem in C abgehen. Umso weiter entfernt scheint nun die Vorstellung eines Transcompilers, der hier alle Umstände berücksichtigt, und aus einer eingeschränkten Umgebung Code sinngemäß erweitern und verändern kann. \\
+Zur generellen Erklärung: \\
+Ein Transcompiler ist ein spezieller Compiler, der den Sourcecode eines Programmes in eine andere Programmiersprache überrträgt. \cite{transpiler}
 
 \section{Praktisches Beispiel: Benchmark}
 asdf
