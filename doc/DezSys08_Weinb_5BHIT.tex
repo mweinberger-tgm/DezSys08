@@ -154,6 +154,18 @@ Die folgenden Tests werden im Benchmark berücksichtigt:
 \end{figure}
 
 Die aus dem bereitgestellten File 'messwerte\_gpupi.xlsx' erstellte Grafik weist ganz klar Ähnlichkeiten mit anderen Referenzgrafiken auf, je flacher und niedriger die Kurve, desto besser.
+
+\begin{lstlisting}[frame=single,language=bash, caption=Vergleichswerte]
+CPU		GPU
+12,876	15,671
+1,3236	5,6794
+93,403	509,86
+47,963	167,51
+0,5817	1,4974
+2,96855	31,128
+29,988	35,114
+\end{lstlisting}
+Von CompuBenchCL entnommen und in 'compubench\_messwerte.docx' gespeichert und bereitgestellt, je größer die Werte, desto mehr Daten konnten verarbeitet werden.
 \subsection{Anzahl der Durchläufe}
 Die Werte bilden eine Mittelwert aus 5 verschiedenen Durchläufen pro Programm.
 \subsection{Informationen bei Benchmark}
@@ -171,7 +183,8 @@ Systemspezifikationen:
 	\item 100\%, Netzbetrieb, Ausbalanciert
 \end{itemize}
 \subsection{Beschreibung, Bereitstellung des Beispiels}
-sadf
+Wie bereits oben beschrieben ist klar ersichtbar, welchen Vorteil die Auslagerung bestimmter rechenintensiver Prozesse auf die GPU bringen kann. Während die GPU den Rechenaufwand flott abarbeitet, hinkt die CPU deutlich hinterher, welcher Vergleich in allen drei in diesem Dokument vorkommenden Grafiken entnommen werden kann. \\
+Die verwendeten Benchmarks sind im Aufgaben-Repository zu finden. \cite{repo}
 
 \newpage
 
