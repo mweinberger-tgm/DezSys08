@@ -145,9 +145,17 @@ Die folgenden Tests werden im Benchmark berücksichtigt:
 \newpage
 
 \subsection{Gegenüberstellung CPU/GPU}
-sadf
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{images/ergebnis}
+		\caption{GPU vs CPU Pi berechnen, oben 500.000 Stellen x 20, unten 100.000 Stellen [Batch Size: 4M, Reduction Size: 64]}
+		\label{Angabe}
+	\end{center}
+\end{figure}
+
+Die aus dem bereitgestellten File 'messwerte\_gpupi.xlsx' erstellte Grafik weist ganz klar Ähnlichkeiten mit anderen Referenzgrafiken auf, je flacher und niedriger die Kurve, desto besser.
 \subsection{Anzahl der Durchläufe}
-sadf
+Die Werte bilden eine Mittelwert aus 5 verschiedenen Durchläufen pro Programm.
 \subsection{Informationen bei Benchmark}
 Systemspezifikationen:
 \begin{itemize}
